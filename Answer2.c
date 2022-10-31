@@ -5,13 +5,14 @@ int factorial(int a);
 
 int main()
 {
-    char req[100000]="I hate it";
-    char addl[]="that I love it";
-    char addh[]="that I hate it";
+    char req[100000]="I not hate it";
+    char addl[]="that I not love it";
+    char addh[]="that I not hate it";
     int len;
     int i;
     int n;
     scanf("%d",&n);
+    printf("input given is a natural number n : %d", n);
     for(i=0;i<n-1;i++){
             len=strlen(req);
             if(i%2==0){
@@ -26,12 +27,5 @@ int main()
     }
     printf("%s",req);
         return 0;
-}
-
-
-int factorial(int a){
-    if(a==0) return 1;
-    else return (a*factorial(a-1));
-
 }
 
